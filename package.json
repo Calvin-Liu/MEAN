@@ -9,8 +9,11 @@
   "author": "Calvin Liu",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "morgan": "^1.8.1",
+    "stylus": "^0.54.5"
   },
   "devDependencies": {
     "bower": "^1.8.0"
