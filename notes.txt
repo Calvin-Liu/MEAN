@@ -1,2 +1,10 @@
 npm init
 npm install --save express jade
+npm install bower --save-dev
+sudo npm install -g bower
+bower init
+bower install jquery --save
+bower install toastr --save
+bower install angular angular-resource angular-route --save
+node <javascript entry point>
+npm install nodemon -g
