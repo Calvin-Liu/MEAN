@@ -9,3 +9,15 @@ bower install angular angular-resource angular-route --save
 nodemon <javascript entry point>
 npm install nodemon -g
 npm install stylus morgan body-parser --save
+npm install mongoose --save
+sudo chown -R $(whoami):admin /usr/local
+cd /usr/local && git fetch && git reset --hard origin/master for brew update
+brew update
+brew install mongodb
+sudo mkdir -p /data/db
+to exit mongo shell quit()
+mongodb
+mongo
+need to open this before connecting to the server.js
+
+
