@@ -19,5 +19,10 @@ to exit mongo shell quit()
 mongodb
 mongo
 need to open this before connecting to the server.js
+use MEAN
+db.messages.insert({message: 'Hello Mongo'})
+show collections
+npm --version
+node --version
 
 
