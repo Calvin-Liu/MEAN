@@ -24,5 +24,14 @@ db.messages.insert({message: 'Hello Mongo'})
 show collections
 npm --version
 node --version
+mlab.com
+free storage space .5GB
+To connect using the mongo shell:
+mongo ds141490.mlab.com:41490/mean -u <dbuser> -p <dbpassword>
+Driver: mongodb://<dbuser>:<dbpassword>@ds141490.mlab.com:41490/mean
+make user: cliu ps: mean
+NODE_ENV=production nodemon server.js
+NODE_ENV=development nodemon server.js
+
 
 
