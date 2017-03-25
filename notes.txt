@@ -32,6 +32,21 @@ Driver: mongodb://<dbuser>:<dbpassword>@ds141490.mlab.com:41490/mean
 make user: cliu ps: mean
 NODE_ENV=production nodemon server.js
 NODE_ENV=development nodemon server.js
+Using heroku CLI
+heroku login
+brew install heroku
+heroku create
+git remote -v to see created git heroku
+heroku config:set NODE_ENV=production
+heroku ps:scale web=1 to tell heroku to allocate resources in order to run app
+heroku open
+heroku logs information about this git server (heroku)
+git add, commit, git push heroku
+heroku keys:add will send your ssh keys to heroku
+There are multiple heroku key commands to manage your ssh keys
+
+
+
 
 
 
