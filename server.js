@@ -15,7 +15,6 @@ function compile(str, path) {
 app.set('views', __dirname + '/server/views');
 app.set('view engine', 'jade');
 app.use(logger('dev'));
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(stylus.middleware(
@@ -24,7 +23,7 @@ app.use(stylus.middleware(
 		compile: compile
 	}
 ));
-app.use(express.static(__dirname + '/public')); //static route handling
+app.use(express.static(__dirname + '/public'));
 
 if(env === 'development') {
 	mongoose.connect('mongodb://localhost/MEAN');
@@ -37,14 +36,13 @@ db.once('open', function callback() {
 	console.log('MEAN db opened')
 });
 
-
 app.get('/partials/:partialPath', function(req, res) {
 	res.render('partials/' + req.params.partialPath);
-})
+});
 
 app.get('*', function(req, res) {
 	res.render('index');
-})
+});
 
 var port = process.env.PORT || 3030;
 app.listen(port);

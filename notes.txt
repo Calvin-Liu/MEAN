@@ -28,6 +28,7 @@ mlab.com
 free storage space .5GB
 To connect using the mongo shell:
 mongo ds141490.mlab.com:41490/mean -u <dbuser> -p <dbpassword>
+cliu411 thenamehost135one
 Driver: mongodb://<dbuser>:<dbpassword>@ds141490.mlab.com:41490/mean
 make user: cliu ps: mean
 NODE_ENV=production nodemon server.js
@@ -44,7 +45,7 @@ heroku logs information about this git server (heroku)
 git add, commit, git push heroku
 heroku keys:add will send your ssh keys to heroku
 There are multiple heroku key commands to manage your ssh keys
-
+If mongo cannot connect, sometimes you have to run: sudo mongod --repair, sudo mongod
 
 
 

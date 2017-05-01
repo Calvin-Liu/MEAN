@@ -1,21 +1,23 @@
 {
   "name": "MEAN",
-  "description": "Extreme Tech Training",
-  "main": "index.js",
+  "version": "0.0.0",
   "authors": [
-    "Calvin Liu"
+    "calvinliu <calvinliu@gmail.com>"
   ],
-  "license": "ISC",
-  "homepage": "",
-  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "^3.1.1",
-    "toastr": "^2.1.3",
-    "angular": "^1.6.3",
-    "angular-resource": "^1.6.3",
-    "angular-route": "^1.6.3"
-  },
-  "resolutions": {
-    "jquery": "^3.1.1"
+    "jquery": "~2.1.1",
+    "toastr": "~2.0.2",
+    "angular": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16"
   }
 }

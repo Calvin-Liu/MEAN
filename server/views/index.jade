@@ -1,18 +1,19 @@
+
 extends ../includes/layout
 
 block main-content
-	.navbar.navbar-inverse.navbar-fixed-top
-		.container
-			.navbar-header
-				a.navbar-brand(href="/") MEAN
-					h6 -Extreme Tech Training
-			.navbar-collapse.collapse
-				u1.nav.navbar-nav
-					li
-						a(href="/") Home
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        a.navbar-brand(href="/") MEAN
+          h6 -Extreme Tech Training
+      .navbar-collapse.collapse
+        u1.nav.navbar-nav
+          li
+            a(href="/") Home
 
-	section.content
-		div(ng-view)
+  section.content
+    div(ng-view)
 
-	footer.container.text-center
-		p &copy; 2017 MEAN Corp International Ltd.
+  footer.container.text-center
+    p &copy; 2017 MEAN Corp International Ltd.
