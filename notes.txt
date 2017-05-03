@@ -30,6 +30,7 @@ To connect using the mongo shell:
 mongo ds141490.mlab.com:41490/mean -u <dbuser> -p <dbpassword>
 cliu411 thenamehost135one
 Driver: mongodb://<dbuser>:<dbpassword>@ds141490.mlab.com:41490/mean
+use MEAN
 make user: cliu ps: mean
 NODE_ENV=production nodemon server.js
 NODE_ENV=development nodemon server.js
@@ -46,6 +47,11 @@ git add, commit, git push heroku
 heroku keys:add will send your ssh keys to heroku
 There are multiple heroku key commands to manage your ssh keys
 If mongo cannot connect, sometimes you have to run: sudo mongod --repair, sudo mongod
+npm install passport passport-local-save
+db.users.remove(false) removes all users
+db.users.find() finds all users
+npm install cookie-parser express-session --save
+
 
 
 

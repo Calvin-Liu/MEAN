@@ -11,6 +11,7 @@ block main-content
         u1.nav.navbar-nav
           li
             a(href="/") Home
+        div(ng-include="'/partials/account/navbar-login'")
 
   section.content
     div(ng-view)
