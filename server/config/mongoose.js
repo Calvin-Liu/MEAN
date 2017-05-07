@@ -27,7 +27,7 @@ module.exports = function(config) {
 		if(collection.length == 0) {
 			var salt, hash;
 			salt = createSalt();
-			hash = hashPwd(salt, 'Calvin');
+			hash = hashPwd(salt, 'calvin');
 			User.create({firstName:'Calvin', lastName: 'Liu', username:'calvin', salt: salt, hashed_pwd: hash});
 			salt = createSalt();
 			hash = hashPwd(salt, 'john');
@@ -35,7 +35,7 @@ module.exports = function(config) {
 			salt = createSalt();
 			hash = hashPwd(salt, 'dan');
 			User.create({firstName:'Dan', lastName: 'Wahlin', username:'dan', salt: salt, hashed_pwd: hash});
-		} 
+		}  
 	})
 }
 

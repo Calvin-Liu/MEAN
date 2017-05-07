@@ -51,6 +51,7 @@ npm install passport passport-local-save
 db.users.remove(false) removes all users
 db.users.find() finds all users
 npm install cookie-parser express-session --save
+bower install bootstrap --save
 
 
 
