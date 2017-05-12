@@ -52,6 +52,13 @@ db.users.remove(false) removes all users
 db.users.find() finds all users
 npm install cookie-parser express-session --save
 bower install bootstrap --save
+npm install --save-dev karma mocha karma-mocha karma-chai-plugins
+npm install karma-cli -g
+bower install --save angular-mocks#1.2.0
+karma init > mocha > no > Chrome > public/app/**/*.js > test/tests/**/*.js > public/app/app.js
+karma start
+
+
 
 
 
